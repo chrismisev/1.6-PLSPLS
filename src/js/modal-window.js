@@ -56,3 +56,9 @@ closeButtonModalFeedback.addEventListener("click", function (evt) {
   contentModalFeedback.classList.remove("modal-feedback--open");
   whiteBackgroundModalFeedback.classList.remove("background-white--active");
 });
+
+whiteBackgroundModalCall.addEventListener("click", () => {
+  contentModalCall.classList.remove("modal-call--open")
+  whiteBackgroundModalCall.classList.remove("background-white--active")
+  contentModalFeedback.classList.remove("modal-feedback--open")
+})

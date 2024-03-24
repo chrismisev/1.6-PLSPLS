@@ -1,35 +1,34 @@
 /* МОДАЛЬНОЕ ОКНО - ПОЗВОНИТЬ И ОБРАТНАЯ СВЯЗЬ */
 /* ОБЩЕЕ */
+
+.modal_button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: right;
+}
+
 .modal-window {
-  padding: 24px 16px 24px 16px;
   position: fixed;
-  overflow-y: auto;
   height: 100%;
   top: 0;
   right: -150%;
-  background-color: $color-white;
   z-index: 3;
-  width: 288px;
+  width: 440px;
   transition: right 500ms ease-in-out;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-
-  @media (min-width: 1440px) {
-    width: 520px;
-    display: flex;
-    justify-content: right;
-    padding: 0;
-    background-color: $color-secondary-black;
-    box-shadow: none;
-  }
+  box-shadow:
+    16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
   &__wrapper {
-    @media (min-width: 1440px) {
-      width: 376px;
-      padding: 24px 32px 24px 32px;
-      box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-      background: $color-white;
-      z-index: 3;
-    }
+    position: relative;
+    padding: 24px 32px 24px 32px;
+    height: 100%;
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    background: $color-white;
+    z-index: 3;
   }
 }
 
@@ -112,9 +111,9 @@
 
   &__button {
     display: flex;
+    align-items: center;
     gap: 10px;
     align-self: flex-end;
-    align-items: center;
     min-width: 136px;
     height: 32px;
     padding: 4px 12px 4px 18px;
@@ -139,11 +138,9 @@
         opacity: 0.6;
       }
 
-      @media (min-width: 1440px) {
-        position: absolute;
-        left: 3px;
-        top: 32.5px;
-      }
+      position: absolute;
+      left: 0;
+      transform: translateX(calc(-100% - 12px));
     }
   }
 }
