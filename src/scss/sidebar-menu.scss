@@ -11,10 +11,13 @@
   overflow-y: auto;
   left: -150%;
   transition: left 500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &--open {
-    height: 100%;
     left: 0;
+    height: 100%;
   }
 
   @media (min-width: 360px) {
@@ -24,6 +27,7 @@
   @media (min-width: 768px) {
     min-width: 320px;
     width: 320px;
+    height: auto;
   }
 
   @media (min-width: 1440px) {
@@ -80,7 +84,7 @@
 
   /* НАВИГАЦИЯ */
   &__navigation {
-    margin: 26px 0 241px 0;
+    margin: 26px 0 0;
     padding: 0 16px 0 16px;
   }
 

@@ -1,40 +1,35 @@
-.section__title-hidden{
+.section__title-hidden {
   visibility: hidden;
 }
 
 .section {
-    &__all-content {
-      min-width: 320px;
+  &__all-content {
+    min-width: 320px;
+  }
+}
+
+/* ШАПКА САЙТА */
+
+.header {
+  background: $color-white;
+  border-bottom: 2px solid $color-secondary-turquoise;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+  &__divider {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      content: "";
+      position: relative;
+      top: 0px;
+      height: 32px;
+      border: 2px solid $color-stroke-grey;
     }
   }
 
-
-  /* ШАПКА САЙТА */
-
-  .header {
-    background: $color-white;
-    border-bottom: 2px solid $color-secondary-turquoise;
-  
-   
-    @media (min-width: 1440px) {
-      display: none;
-    }
-
-    &__divider {
-        display: none;
-        @media (min-width: 768px) {
-          display: block;
-          content: "";
-          position: relative;
-          top: 0px;
-          height: 32px;
-          border: 2px solid $color-stroke-grey;
-        }
-      }
-    
-      
-     
-      
   &__container {
     display: flex;
     justify-content: space-between;
@@ -46,7 +41,6 @@
       width: 95%;
     }
   }
-
 
   &__logo-side {
     display: flex;
@@ -68,7 +62,7 @@
     }
   }
 
-  &__contacts-side{
+  &__contacts-side {
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -99,7 +93,7 @@
 }
 
 .header__logo-side > .header__button-item:nth-child(2) {
-    @media (min-width: 768px) {
-      margin-left: 16px;
-    }
+  @media (min-width: 768px) {
+    margin-left: 16px;
   }
+}
