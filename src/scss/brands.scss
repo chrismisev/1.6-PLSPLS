@@ -71,6 +71,7 @@
   }
   
   .section-brands__button-all {
+    margin-left:20px;
     &__text {
       font-style: normal;
       font-weight: 500;
@@ -83,6 +84,7 @@
     }
   
     &__svg-arrow {
+      margin-top:24px ;
       &--hide {
         transform: rotate(180deg);
         transition-duration: 0.2s;

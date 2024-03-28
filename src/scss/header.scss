@@ -1,8 +1,13 @@
+.section__title-hidden{
+  visibility: hidden;
+}
+
 .section {
     &__all-content {
       min-width: 320px;
     }
   }
+
 
   /* ШАПКА САЙТА */
 
@@ -10,6 +15,7 @@
     background: $color-white;
     border-bottom: 2px solid $color-secondary-turquoise;
   
+   
     @media (min-width: 1440px) {
       display: none;
     }
@@ -26,6 +32,8 @@
         }
       }
     
+      
+     
       
   &__container {
     display: flex;

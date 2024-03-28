@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="RU">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    >
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
       defer
@@ -109,9 +109,7 @@
             >
               <rect width="40" height="40" rx="20" fill="#FF3E79" />
               <path
-                class="sidebar-header__menu-button-search--active"
-                class="lol"
-                class="img-search"
+                class="sidebar-header__menu-button-search--active lol img-search"
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M23.5006 22.0006H22.7106L22.4306 21.7306C23.6306 20.3306 24.2506 18.4206 23.9106 16.3906C23.4406 13.6106 21.1206 11.3906 18.3206 11.0506C14.0906 10.5306 10.5306 14.0906 11.0506 18.3206C11.3906 21.1206 13.6106 23.4406 16.3906 23.9106C18.4206 24.2506 20.3306 23.6306 21.7306 22.4306L22.0006 22.7106V23.5006L26.2606 27.7506C26.6706 28.1606 27.3306 28.1606 27.7406 27.7506L27.7506 27.7406C28.1606 27.3306 28.1606 26.6706 27.7506 26.2606L23.5006 22.0006ZM17.5006 22.0006C15.0106 22.0006 13.0006 19.9906 13.0006 17.5006C13.0006 15.0106 15.0106 13.0006 17.5006 13.0006C19.9906 13.0006 22.0006 15.0106 22.0006 17.5006C22.0006 19.9906 19.9906 22.0006 17.5006 22.0006Z"
@@ -266,7 +264,7 @@
     </footer>
   </aside>
   <!-- ОКНО - ПОЗВОНИТЬ -->
-  <acide class="modal-call modal-window">
+  <div class="modal-call modal-window">
     <div class="modal-window__wrapper">
       <button class="modal-call__button--close modal__button--close">
         <svg
@@ -287,8 +285,8 @@
       </svg>
       </button>
       <h2 class="modal_title">Заказать звонок</h2>
-      <form action="" class="modal__form">
-        <input class="modal__input" type="text" placeholder="Телефон" />
+      <form action="#" class="modal__form">
+        <input class="modal__input" type="text" placeholder="Телефон" >
         <p class="modal__information">
           Нажимая "отправить", вы даете согласие на
           <a href="#" class="modal_link">обработку персональных данных </a>и
@@ -322,9 +320,9 @@
         </button>
         </form>
     </div>
-  </acide>
+  </div>
       <!-- ОКНО ОБРАТНАЯ СВЯЗЬ -->
-      <aside class="modal-feedback modal-window">
+      <div class="modal-feedback modal-window">
         <div class="modal-feedback__wrapper modal-window__wrapper">
           <button class="modal-feedback__button--close modal__button--close">
             <svg
@@ -344,19 +342,19 @@
           </svg>
           </button>
           <h2 class="modal_title">Обратная связь</h2>
-          <form action="" class="modal__form">
-            <input class="modal__input" type="text" placeholder="Имя" />
-            <input class="modal__input" type="text" placeholder="Телефон" />
+          <form action="#" class="modal__form">
+            <input class="modal__input" type="text" placeholder="Имя" >
+            <input class="modal__input" type="text" placeholder="Телефон" >
             <input
               class="modal__input"
               type="text"
               placeholder="Электронная почта"
-            />
+            >
             <textarea
               class="modal__input modal-feedback__messages"
               placeholder="Сообщение"
-              name=""
-              id=""
+              name="#"
+              id="#"
               cols="30"
               rows="10"
             ></textarea>
@@ -393,11 +391,12 @@
             </button>
           </form>
         </div>
-      </aside>
+      </div>
        <!-- ОСНОВНОЕ СОДЕРЖИМОЕ САЙТА -->
        <section class="section__all-content">
           <!-- ШАПКА САЙТА -->
           <header class="header">
+            <h2 class="section__title-hidden">lol</h2>
             <div class="header__container">
               <!-- лого и кнопка -->
               <div class="header__logo-side">
@@ -598,20 +597,21 @@
               </div>
             </div>
           </header>
-
-          <!----Body---------->
-          <main class="main">
-       <!-----1 секция--ОСНОВНАЯ ЧАСТЬ---------->
+       
+          <!--Body--------->
+          <div class="main">
+       <!---1 секция--ОСНОВНАЯ ЧАСТЬ---------->
     <section class="main-container">
        <div class="main-container__title">
 
         <div class="title-number1">
-          <h1 class="title-number1__head">Услуги и Сервисы</h1>
+          <h2 class="title-number1__head">Услуги и Сервисы</h2>
         </div>
           <div class="title-number2">
 
               <button class="title-number2__button">
-                  <p class="title-number2__button-text">>Оставить заявку</p>
+                  <span class="title-number2__button-text">Оставить заявку</span>
+
                   <svg class="title-number2__button-img"
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
@@ -636,7 +636,7 @@
               </button>
 
               <button class="title-number2__button">
-                <p class="title-number2__button-text">Статус ремонта</p>
+                <span class="title-number2__button-text">Статус ремонта</span>
                 <svg class="title-number2__button-img"
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -684,10 +684,10 @@
       </nav>
 
 
-      <!-------  Техт и логотип-------------------->
+      <!-----  Техт и логотип-------------------->
 
       <section class="main-container__content">
-
+        <h2 class="section__title-hidden">daa</h2>
           <div class="main-container_content-text">
 
               <div class="main-container__text">
@@ -730,7 +730,7 @@
                   fill="#41F6D7"
                 />
               </svg>
-                 <p class="main-container__button-text"> Читать далее  </p>
+                 <span class="main-container__button-text"> Читать далее  </span>
               </button>
 
           </div>
@@ -740,7 +740,7 @@
             class="main-container__illustraton-1"
             src="/src/img/Picture_CPS.jpg"
             alt="Логотип компании"
-          />
+          >
 
           </div>
       </section>
@@ -769,8 +769,8 @@
                Created with Pixso.
        </desc>
        <defs/>
-       <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-       <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+       <rect id="len" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+       <path id="ov" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
    </svg>
 
        </button>
@@ -786,8 +786,8 @@
                     Created with Pixso.
             </desc>
             <defs/>
-            <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-            <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+            <rect id="sam" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+            <path id="ung" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
            </svg>
 
         </button>
@@ -804,8 +804,8 @@
                 Created with Pixso.
         </desc>
         <defs/>
-        <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-        <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+        <rect id="app" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+        <path id="le" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
        </svg>
 
      </button>
@@ -823,8 +823,8 @@
                 Created with Pixso.
         </desc>
         <defs/>
-        <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-        <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+        <rect id="view" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+        <path id="sonick" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
        </svg>
 
      </button>
@@ -842,8 +842,8 @@
                    Created with Pixso.
            </desc>
            <defs/>
-           <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-           <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+           <rect id="bo" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+           <path id="sh" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
 
           </svg>
 
@@ -862,8 +862,8 @@
                    Created with Pixso.
            </desc>
            <defs/>
-           <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-           <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+           <rect id="h" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+           <path id="p" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
           </svg>
 
         </button>
@@ -899,8 +899,8 @@
                     Created with Pixso.
             </desc>
             <defs/>
-            <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-            <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+            <rect id="son" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+            <path id="ony" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
            </svg>
 
          </button>
@@ -917,8 +917,8 @@
                     Created with Pixso.
             </desc>
             <defs/>
-            <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-            <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+            <rect id="evo" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+            <path id="leno" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
            </svg>
 
          </button>
@@ -935,8 +935,8 @@
                     Created with Pixso.
             </desc>
             <defs/>
-            <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-            <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+            <rect id="ong" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+            <path id="sung" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
            </svg>
 
          </button>
@@ -953,8 +953,8 @@
                    Created with Pixso.
            </desc>
            <defs/>
-           <rect id="back" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
-           <path id="dropdown" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+           <rect id="po" x="1.000000" y="1.000000" rx="19.000000" width="38.000000" height="38.000000" stroke="#FF3E79" stroke-opacity="1.000000" stroke-width="2.000000"/>
+           <path id="appplle" d="M21.5 20L17.707 16.207C17.3167 15.8167 17.3167 15.1833 17.707 14.793L17.793 14.707C18.1833 14.3167 18.8167 14.3167 19.207 14.707L23.793 19.293C24.1833 19.6833 24.1833 20.3167 23.793 20.707L19.207 25.293C18.8167 25.6833 18.1833 25.6833 17.793 25.293L17.707 25.207C17.3167 24.8167 17.3167 24.1833 17.707 23.793L21.5 20Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
           </svg>
 
         </button>
@@ -1294,7 +1294,7 @@
         fill="#41F6D7"
       />
     </svg>
-    <p class="type-button__text">Показать все</p>
+    <span class="type-button__text">Показать все</span>
   </button>
 </section>
    <!-- 4 СЕКЦИЯ ЦЕНЫ  -->
@@ -1333,7 +1333,7 @@
             <p class="section-price__block-text">30-120 мин</p>
           </div>
           <button class="section-price__button">
-            <p>Заказать</p>
+            <span>Заказать</span>
             <svg
               class="section-price__button-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -1372,7 +1372,7 @@
             <p class="section-price__block-text">30 мин</p>
           </div>
           <button class="section-price__button">
-            <p>Заказать</p>
+            <span>Заказать</span>
             <svg
               class="section-price__button-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -1411,7 +1411,7 @@
             <p class="section-price__block-text">30-120 мин</p>
           </div>
           <button class="section-price__button">
-            <p>Заказать</p>
+            <span>Заказать</span>
             <svg
               class="section-price__button-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -1450,7 +1450,7 @@
             <p class="section-price__block-text">30-120 мин</p>
           </div>
           <button class="section-price__button">
-            <p>Заказать</p>
+            <span>Заказать</span>
             <svg
               class="section-price__button-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -1489,7 +1489,7 @@
             <p class="section-price__block-text">30-120 мин</p>
           </div>
           <button class="section-price__button">
-            <p>Заказать</p>
+            <span>Заказать</span>
             <svg
               class="section-price__button-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -1527,7 +1527,7 @@
   </a>
 </div>
 </section>
-</main>
+</div>
 <!-- ПОДВАЛ САЙТА  -->
 <footer class="footer">
   <div class="footer__container">

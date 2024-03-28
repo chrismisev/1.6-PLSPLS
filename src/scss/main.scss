@@ -53,7 +53,8 @@
     &__content {
       display: flex;
       flex-direction: column;
-  
+     
+    
       @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
@@ -68,6 +69,13 @@
       gap: 16px;
       margin: 0 auto;
       width: 90%;
+      
+      @media only screen and (max-width: 320px) {
+        .main-container_content-text p {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      }
     }
   
     &__text {

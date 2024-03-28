@@ -13,7 +13,7 @@ function closeMenu() {
 openButtonMenu.addEventListener("click", function (evt) {
   contentMenu.classList.add("sidebar-header--open");
   whiteBackground.classList.add("background-white--active");
-  document.body.style.overflow = "hidden";
+ document.body.style.overflow = "hidden";
 });
 
 closeButtonMenu.addEventListener("click", function (evt) {

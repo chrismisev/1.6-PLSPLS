@@ -20,11 +20,13 @@ let openButtonModalCallSidebar = document.querySelector(".sidebar-modal-call__bu
 openButtonModalCallSidebar.addEventListener("click", function (evt) {
   contentModalCall.classList.add("modal-call--open");
   whiteBackgroundModalCall.classList.add("background-white--active");
+  document.body.style.overflow = "hidden";
   contentMenu.classList.remove("sidebar-header--open");
 });
 
 closeButtonModalCall.addEventListener("click", function (evt) {
   contentModalCall.classList.remove("modal-call--open");
+  document.body.style.overflow = "visible";
   whiteBackgroundModalCall.classList.remove("background-white--active");
 });
 
@@ -37,11 +39,13 @@ let whiteBackgroundModalFeedback = document.querySelector(".background-white");
 openButtonModalFeedback.addEventListener("click", function (evt) {
   contentModalFeedback.classList.add("modal-feedback--open");
   whiteBackgroundModalFeedback.classList.add("background-white--active");
+  document.body.style.overflow ="hidden";
 });
 
 closeButtonModalFeedback.addEventListener("click", function (evt) {
   contentModalFeedback.classList.remove("modal-feedback--open");
   whiteBackgroundModalFeedback.classList.remove("background-white--active");
+ 
 });
 
 // КНОПКА -ОБРАТНАЯ СВЯЗЬ- В САЙДБАР МЕНЮ
@@ -49,16 +53,19 @@ let openButtonModalFeedbackSidebar = document.querySelector(".sidebar-modal-feed
 openButtonModalFeedbackSidebar.addEventListener("click", function (evt) {
   contentModalFeedback.classList.add("modal-feedback--open");
   whiteBackgroundModalFeedback.classList.add("background-white--active");
+  document.body.style.overflow = "hidden";
   contentMenu.classList.remove("sidebar-header--open");
 });
 
 closeButtonModalFeedback.addEventListener("click", function (evt) {
   contentModalFeedback.classList.remove("modal-feedback--open");
   whiteBackgroundModalFeedback.classList.remove("background-white--active");
+  document.body.style.overflow = "visible";
 });
 
 whiteBackgroundModalCall.addEventListener("click", () => {
   contentModalCall.classList.remove("modal-call--open")
   whiteBackgroundModalCall.classList.remove("background-white--active")
   contentModalFeedback.classList.remove("modal-feedback--open")
+  document.body.style.overflow = "visible";
 })
