@@ -51,7 +51,7 @@
       top: 105px;
       left: 0px;
       border-radius: 0 10px 10px 0;
-      background-color: $color-main-turquoise;
+      background-color: $color-main-turquoise ;
     }
 
     @media (min-width: 1440px) {
@@ -90,7 +90,7 @@
   }
 
   &__information {
-    max-width: 288px;
+    max-width: 376px;
     margin-bottom: 18px;
     color: text-color-main-grey;
     font-family: TT Lakes;
@@ -136,6 +136,11 @@
       &:hover,
       &:focus {
         opacity: 0.6;
+      }
+      @media (min-width: 1440px) {
+        position: absolute;
+        left: 3px;
+        top: 32.5px;
       }
 
       position: absolute;
